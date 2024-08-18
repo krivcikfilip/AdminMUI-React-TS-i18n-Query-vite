@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
+import toast from 'react-hot-toast'
 
 import Toaster from './Toaster'
-import toast from 'react-hot-toast'
 
 const meta: Meta<typeof Toaster> = {
     component: Toaster,
