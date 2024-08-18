@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { Form, Formik } from 'formik'
 
-import { FormField } from './FormField'
+import FormField from './FormField'
 
 const meta: Meta<typeof FormField> = {
     component: FormField,

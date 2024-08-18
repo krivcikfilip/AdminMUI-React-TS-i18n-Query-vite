@@ -1,11 +1,16 @@
+import { CssBaseline, ThemeProvider } from '@mui/material'
 import { Preview } from '@storybook/react'
 import { StrictMode } from 'react'
+import { theme } from '../src/theme/theme'
 
 const preview: Preview = {
     decorators: [
         (Story) => (
             <StrictMode>
-                <Story />
+                <ThemeProvider theme={theme}>
+                    <Story />
+                    <CssBaseline />
+                </ThemeProvider>
             </StrictMode>
         ),
     ],

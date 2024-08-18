@@ -1,8 +1,8 @@
-import { preloadErrorListener } from '@template/common'
 import React from 'react'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 
 import { routerPaths } from '@/config/router-paths'
+import { preloadErrorListener } from '@template/common'
 import { authRoutes } from '@/views/auth/auth-routes'
 import { dashboardRoutes } from '@/views/dashboard/dashboard-routes'
 

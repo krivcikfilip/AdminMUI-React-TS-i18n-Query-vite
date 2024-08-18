@@ -2,7 +2,7 @@ import './commands'
 
 import { ThemeProvider } from '@mui/material'
 import CssBaseline from '@mui/material/CssBaseline'
-import { theme } from '@template/common'
+import { theme } from '../../src/theme/theme'
 import { mount } from 'cypress/react18'
 import { StrictMode } from 'react'
 

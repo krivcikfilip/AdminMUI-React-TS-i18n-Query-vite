@@ -15,13 +15,6 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@emotion/react": "^11.13.0",
-        "@emotion/styled": "^11.13.0",
-        "@mui/icons-material": "5.15.16",
-        "@mui/material": "5.15.15",
-        "@mui/x-charts": "^7.11.0",
-        "@mui/x-data-grid-pro": "^7.11.0",
-        "@mui/x-date-pickers-pro": "^7.11.0",
         "dayjs": "^1.11.12",
         "formik": "^2.4.6",
         "lodash": "^4.17.21",

@@ -19,7 +19,7 @@ import { useNavigate } from 'react-router-dom'
 import { supportLanguages } from '@/config/i18n/i18n'
 import { routerPaths } from '@/config/router-paths'
 import { UserResponse } from '@/requests/responses'
-import { selectUi, useAppSelector } from '@/store/index'
+import { selectUi, useAppSelector } from '@/store/store'
 
 interface NavigationProps {
     user: UserResponse
@@ -60,7 +60,7 @@ const Navigation = ({ user }: NavigationProps) => {
         return navigate(routerPaths.auth.login)
     }
 
-    const languages = _.entries(supportLanguages)
+    const languages = _.keys(supportLanguages)
 
     return (
         <AppBar
@@ -134,12 +134,12 @@ const Navigation = ({ user }: NavigationProps) => {
                     horizontal: 'center',
                 }}
             >
-                {_.map(languages, ([language, code]) => (
+                {_.map(languages, (language) => (
                     <MenuItem
-                        key={code}
-                        value={code}
-                        onClick={() => onLanguage(code)}
-                        selected={code === i18n.language}
+                        key={language}
+                        value={language}
+                        onClick={() => onLanguage(language)}
+                        selected={language === i18n.language}
                     >
                         <ListItemIcon>
                             <Box
@@ -147,7 +147,7 @@ const Navigation = ({ user }: NavigationProps) => {
                                 height={22}
                                 component='img'
                                 alt={t('labels.language')}
-                                src={`/images/flags/${code}.png`}
+                                src={`/images/flags/${language}.png`}
                                 sx={{
                                     objectFit: 'cover',
                                 }}
