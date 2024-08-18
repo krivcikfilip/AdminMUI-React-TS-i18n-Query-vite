@@ -19,8 +19,4 @@
 **/cypress/screenshots
 **/cypress-image-diff-html-report
 **/cypress-image-diff-screenshots/comparison
-<<<<<<< HEAD
 **/cypress-image-diff-screenshots/diff
-=======
-**/cypress-image-diff-screenshots/diff
->>>>>>> bdd0d6c (New structure)
