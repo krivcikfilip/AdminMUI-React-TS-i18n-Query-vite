@@ -17,6 +17,7 @@
             "@/config/*": ["src/config/*"],
             "@/requests/*": ["src/requests/*"],
             "@/store/*": ["src/store/*"],
+            "@/theme/*": ["src/theme/*"],
             "@/translations/*": ["src/translations/*"],
             "@/utils/*": ["src/utils/*"],
             "@/views/*": ["src/views/*"]
@@ -38,6 +39,6 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true
     },
-    "include": ["src", "cypress"],
+    "include": ["src", "cypress", ".storybook"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

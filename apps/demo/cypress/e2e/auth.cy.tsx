@@ -1,4 +1,4 @@
-import { routerPaths } from '../../src/config/router-paths'
+import { routerPaths } from '@/config/router-paths'
 
 describe('Auth', () => {
     it('Should redirect to users', () => {

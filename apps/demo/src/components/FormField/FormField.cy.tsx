@@ -1,6 +1,6 @@
 import { Form, Formik } from 'formik'
 
-import { FormField } from './FormField'
+import FormField from './FormField'
 
 const Component = () => {
     return (

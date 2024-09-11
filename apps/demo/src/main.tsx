@@ -8,7 +8,6 @@ import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs'
 import { LicenseInfo } from '@mui/x-license-pro'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import { theme } from '@template/common'
 import i18n from 'i18next'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -16,9 +15,10 @@ import { Provider } from 'react-redux'
 
 import Toaster from '@/components/Toaster/Toaster'
 import { queryClient } from '@/config/query-client/query-client'
+import store from '@/store/store'
+import { theme } from '@/theme/theme'
 
 import App from './App'
-import store from './store'
 
 LicenseInfo.setLicenseKey(import.meta.env.VITE_MUI_LICENSE)
 

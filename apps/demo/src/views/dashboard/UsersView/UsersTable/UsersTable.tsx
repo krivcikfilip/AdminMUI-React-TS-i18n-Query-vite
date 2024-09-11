@@ -4,10 +4,9 @@ import { GridColDef } from '@mui/x-data-grid'
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 
+import { queryKeys } from '@/config/query-client/query-key'
 import { UserResponse } from '@/requests/responses'
 import { getUsersRequest } from '@/requests/users/get-users-request'
-
-import { queryKeys } from '../../../../config/query-client/query-key'
 
 const UsersTable = () => {
     const { t } = useTranslation()

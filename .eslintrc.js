@@ -8,10 +8,15 @@ module.exports = {
         'plugin:cypress/recommended',
     ],
     parser: '@typescript-eslint/parser',
-    plugins: ['mui-path-imports', 'simple-import-sort', 'react-hooks'],
+    plugins: ['simple-import-sort', 'react-hooks'],
     rules: {
         'simple-import-sort/imports': 'error',
-        'mui-path-imports/mui-path-imports': 'error',
+        'react/react-in-jsx-scope': 'off',
+    },
+    parser: '@typescript-eslint/parser',
+    plugins: ['simple-import-sort', 'react-hooks'],
+    rules: {
+        'simple-import-sort/imports': 'error',
         'react/react-in-jsx-scope': 'off',
     },
 }
